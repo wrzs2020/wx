@@ -51,6 +51,8 @@ class WxStoreunConfig
     public static $get_shop_live_record_qr_code_url = 'https://api.weixin.qq.com/channels/ec/promoter/get_shop_live_record_qr_code?access_token=';
     public static $get_shop_live_notice_record_qr_code_url = 'https://api.weixin.qq.com/channels/ec/promoter/get_shop_live_notice_record_qr_code?access_token=';
     public static $get_shop_live_commission_product_list_url = 'https://api.weixin.qq.com/channels/ec/promoter/get_shop_live_commission_product_list?access_token=';
+    public static $get_live_notice_promoter_share_link_url = 'https://api.weixin.qq.com/channels/ec/promoter/get_live_notice_promoter_share_link?access_token=';
+    public static $get_shop_live_notice_promoter_share_link_url = 'https://api.weixin.qq.com/channels/ec/promoter/get_shop_live_notice_promoter_share_link?access_token=';
 
     //短视频推广 Feed::
     public static $get_feed_list_url = 'https://api.weixin.qq.com/channels/ec/promoter/get_feed_list?access_token=';

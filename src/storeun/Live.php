@@ -38,6 +38,22 @@ class Live
         $curlBack = Curl::to($url, $sign);
         return json_decode($curlBack, true);
     }
+    //生成某个达人平台的用于直播预约的推广参数
+    public static function get_live_notice_promoter_share_link($arr)
+    {
+        $url = WxStoreunConfig::$get_live_notice_promoter_share_link_url . At::get();
+        $sign = json_encode($arr, 320);
+        $curlBack = Curl::to($url, $sign);
+        return json_decode($curlBack, true);
+    }
+    //生成某个达人平台的用于直播预约的推广参数
+    public static function get_shop_live_notice_promoter_share_link($arr)
+    {
+        $url = WxStoreunConfig::$get_shop_live_notice_promoter_share_link_url . At::get();
+        $sign = json_encode($arr, 320);
+        $curlBack = Curl::to($url, $sign);
+        return json_decode($curlBack, true);
+    }
     //获取某个带货者当前直播的带货商品列表
     public static function get_live_commission_product_list($arr)
     {
